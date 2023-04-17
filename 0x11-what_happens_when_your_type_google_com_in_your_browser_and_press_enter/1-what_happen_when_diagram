@@ -1,0 +1,74 @@
+here is a schema illustrating the flow of the request when you type https://www.google.com in your browser and press Enter:
+
+
+                                 +--------+
+
+                                 | DNS  |
+
+                                 +--------+
+
+                                     |
+
+                                     v
+
+                             +-------------+
+
+        HTTPS encrypted      |            |
+
+        request hits         |  Server   |
+
+        server IP on         |            |
+
+        appropriate port     +-------------+
+
+                                     |
+
+                                     v
+
+                             +-------------+
+
+                             |  Firewall |
+
+                             +-------------+
+
+                                     |
+
+                                     v
+
+                             +-------------+
+
+                             | Load       |
+
+                             | Balancer   |
+
+                             +-------------+
+
+                                     |
+
+                                     v
+
+                             +-------------+
+
+        Web server serves    |            |
+
+        web page             |            |
+
+        in response to       | Application |
+
+        browser's request    |  Server   |
+
+                             |            |
+
+                             +-------------+
+
+                                     |
+
+                                     v
+
+                             +-------------+
+
+                             |  Database |
+
+                             +-------------+
+
+As you can see from the schema, the request first goes through a DNS resolution to convert the domain name into an IP address. Then, the HTTPS encrypted request hits the server IP on the appropriate port and goes through a firewall. Next, the request is distributed via a load balancer to ensure that the traffic is distributed evenly across multiple servers. The web server serves the web page in response to the browser's request, and the application server generates the web page by requesting data from the database. Finally, the response is sent back to the browser.
