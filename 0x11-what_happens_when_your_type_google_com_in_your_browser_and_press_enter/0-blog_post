@@ -1,0 +1,27 @@
+When you type https://www.google.com into your browser and press Enter, a series of complex processes occur in the background that allows you to access the Google search engine. Here's a step-by-step breakdown of what happens:
+
+    DNS request:
+    The first thing your browser does is send a Domain Name System (DNS) request to convert the human-readable domain name (www.google.com) into an IP address. This request is sent to a DNS resolver, which is typically provided by your Internet Service Provider (ISP) or a third-party service like Google DNS.
+
+    TCP/IP:
+    Once the IP address is obtained, your browser establishes a Transmission Control Protocol/Internet Protocol (TCP/IP) connection with the server hosting Google.com. This connection is used to send and receive data between your computer and the server.
+
+    Firewall:
+    Your computer's firewall may also come into play at this point, which can block certain types of traffic or limit access to specific ports.
+
+    HTTPS/SSL:
+    If the website is secured with HTTPS/SSL (which Google.com is), a secure connection is established between your browser and the server using SSL/TLS encryption. This ensures that any data transmitted between your computer and the server is encrypted and secure from third-party interference.
+
+    Load-balancer:
+    If the server is receiving a high volume of requests, a load-balancer may be used to distribute the traffic across multiple servers. This helps to ensure that the website remains available and responsive, even during periods of high traffic.
+
+    Web server:
+    The web server is responsible for serving up the website's content to your browser. In the case of Google.com, this content includes the search bar, logo, and other elements of the website's user interface.
+
+    Application server:
+    The application server is responsible for processing user requests and generating responses. In the case of Google.com, this includes handling search queries and returning relevant search results.
+
+    Database:
+    Finally, the database is responsible for storing and retrieving data, such as search queries and user account information. In the case of Google.com, this database may be distributed across multiple servers to ensure high availability and data redundancy.
+
+In conclusion, accessing a website like Google.com involves a complex series of processes that are largely invisible to the end user. From DNS requests and TCP/IP connections to HTTPS encryption and load-balancers, each of these components plays a critical role in ensuring that the website is available, secure, and responsive to user requests.
